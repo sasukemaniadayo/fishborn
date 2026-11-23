@@ -625,7 +625,7 @@ function toTitle(){
 function lose(h){state='over';queued=0;setPause(false);onHit(h);showOv('落水！',h&&h.front?'ボーンに接触してバランスを崩した':'ボーンに押された');}
 function win(){
   state='clear';gasStart();const t=time.toFixed(3);
-  xText=PLAYERS[mode].name+'が'+COURSE_DEFS[courseIdx].name+'コースを'+t+'秒でクリアした！\nhttps://sasukemaniadayo.github.io/fishborn/\n#フィッシュボーンゲーム';
+  xText=PLAYERS[mode].name+'が'+COURSE_DEFS[courseIdx].name+'コースを'+t+'秒でクリアした！\nhttps://fishborn.pages.dev\n#フィッシュボーンゲーム';
   showOv('クリア！','ゴールタイム：'+t+' 秒');
 }
 function go(n){
